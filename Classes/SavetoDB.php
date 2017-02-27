@@ -1,0 +1,114 @@
+<?php
+ Class SavetoDB 
+{
+
+
+// **************************************************************************************
+// **************************************************************************************
+//                                                                                     **  
+  public function connectDB()
+  { 
+   
+    global $conn;
+    $servername = "localhost";
+    $username = "root";
+    $password = "root";
+
+try {
+    $conn = new PDO("mysql:host=$servername;dbname=seotm", $username, $password);
+    // set the PDO error mode to exception
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    echo "</br>Connected successfully to  DataBase"; 
+    $_POST['connection_flag']='connection_flag_OK';
+
+
+
+
+    }
+catch(PDOException $e)
+    {
+    echo "</br>Connection failed: " . $e->getMessage();
+    }
+
+
+
+
+  } //END function 
+// **                                                                                  **
+// **************************************************************************************
+// **************************************************************************************
+//
+
+
+
+
+
+
+
+
+
+
+
+
+// **************************************************************************************
+// **************************************************************************************
+//                                                                                     **  
+  public function save_to_DB()
+  { 
+    global $conn;
+    if($_POST['connection_flag']=='connection_flag_OK')
+    {
+    
+      try {
+          echo"</br> Starting  saving  to  DataBase";
+
+                     
+          //START INSERTING VALUES
+          $sth=$conn->prepare("INSERT INTO mod_feedback (fio,email,phone,descr,dt,ip) VALUES (:fio, :email, :phone, :descr,:dt,:ip) ");
+          $sth->bindValue(':fio',$_POST['namePH']);   
+          $sth->bindValue(':email',$_POST['emailPH']   );
+          $sth->bindValue(':phone',$_POST['phonePH']   );
+          $sth->bindValue(':descr',$_POST['descriptionPH']);
+          $sth->bindValue(':dt',date("Y-m-d")." ".date("h:i:s") );
+          $sth->bindValue(':ip',$_SERVER['SERVER_ADDR']);
+          $sth->execute();
+          echo"</br> Saved";
+          $_POST['DBsave_flag']='DBsaved_flag_OK';
+          }
+      catch(PDOException $e)
+          {
+           echo "</br>Saving failed: " . $e->getMessage();
+          }
+
+     } else
+     {
+      echo"</br> Failed  saving  to  DB";   
+     }
+     //end if($_POST['connection_flag']=='connection_flag_OK')
+
+
+
+
+  } //END function 
+// **                                                                                  **
+// **************************************************************************************
+// **************************************************************************************
+//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+?>
