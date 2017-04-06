@@ -1,5 +1,17 @@
 $(document).ready(function(){
 
+
+//$('.bxslider').bxSlider();
+
+/*$('.bxslider').bxSlider({
+  minSlides: 2,
+  maxSlides: 2,
+  slideWidth: 360,
+  slideMargin: 10
+});*/
+
+
+
 window.RegExp_Name=/^[a-zA-Z]{3,16}$/;
 window.RegExp_Email=/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 window.RegExp_Phone=/^[+]380\([\d]{1,4}\)[0-9]+$/;
@@ -35,7 +47,40 @@ myValidate(this.id,RegExp_Phone, '  must be in format +380(****)****** ');  ///^
 //END Button  click----------
 
 
+
+
+
+
+
+
+
+
 }); //  END  READY
+
+
+
+
+
+
+//---------------------------
+
+//Start changing menu  size
+$(window).scroll(function() {
+  if ($(document).scrollTop() > 150) { //alert('down');
+   $('.menu').addClass('shrink');
+  } else {
+   $('.menu').removeClass('shrink');
+  }
+});
+//Change  menu  size
+//--------------------------------------
+
+
+
+
+
+
+
 
 
 
@@ -92,7 +137,7 @@ if ($("#" +id).val()!=='')
 //                                                                                     ** 
 
 function ValidateAll(){
- alert("The b was clicked.");
+ //alert("The b was clicked.");
  ResetAllInputs();
     var status  = [];
 

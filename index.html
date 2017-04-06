@@ -6,27 +6,257 @@
 	<title></title>
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="script/slider.js"></script>
     <script src="script/script.js"></script>
+
 	<link href="style/style.css" rel="stylesheet">
+    <link href="style/slider.css" rel="stylesheet">
+
+    <!---LightBox  JS  CSS---->
+    <script type="text/javascript" src="script/jquery.lightbox-0.5.min.js"></script>
+    <!--<link rel="stylesheet" type="text/css" media="all" href="style/jquery.lightbox-0.5.css">-->
+
+
+
 </head>
 
 <body>
 
 <div class="wrapper">
 
+<!------------------------------------------------------------HEADER---------------------------------------------------------------------->
 	<header class="header">
-		<strong>Header:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tortor. Praesent dictum, libero ut tempus dictum, neque eros elementum mauris, quis mollis arcu velit ac diam. Etiam neque. Quisque nec turpis. Aliquam arcu nulla, dictum et, lacinia a, mollis in, ante. Sed eu felis in elit tempor venenatis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut ultricies porttitor purus. Proin non tellus at ligula fringilla tristique. Fusce vehicula quam. Curabitur vel tortor vitae pede imperdiet ultrices. Sed tortor.
+
+					<div class="menu topnav" id="myTopnav">
+						<ul>
+							 <li class="dropdown">
+							 <a href="javascript:void(0)" class="dropbtn">Dropdown1</a>
+								<div class="dropdown-content">
+									<a href="#">Link d1</a>
+									<a href="#">Link d2</a>
+									<a href="#">Link d3</a>
+								</div>
+						   </li>
+
+
+							<li class="dropdown">
+							 <a href="javascript:void(0)" class="dropbtn">Dropdown2</a>
+								<div class="dropdown-content">
+									<a href="#">Link F1</a>
+									<a href="#">Link 33</a>
+									<a href="#">Link 3</a>
+								</div>
+						   </li>
+
+							 
+
+							 <li class="dropdown">
+								<a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+								<div class="dropdown-content">
+									<a href="#">Link C1</a>
+									<a href="#">Link 2</a>
+									<a href="#">Link 3</a>
+								</div>
+						   </li>
+
+						   <li class="dropdown">
+								<a href="javascript:void(0)" class="dropbtn">Dropdown7</a>
+								<div class="dropdown-content">
+									<a href="#">Link 1</a>
+									<a href="#">Link 2</a>
+									<a href="#">Link 3</a>
+								</div>
+						   </li>
+
+                           <!--  For  responsive  menu-->
+                           <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+
+
+						 </ul>
+					 </div><!-- ----END .menu------->
+
+
+<!--   responsive  menu-->
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") { //alert('t');
+        x.className += " responsive menu";
+    } else {
+        x.className= "topnav";
+    }
+}
+</script>
+<!--   END responsive  menu-->
+
+
+		<p style="padding-top:66px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tortor. Praesent dictum, libero ut tempus dictum, neque eros elementum mauris, quis mollis arcu velit ac diam. Etiam neque. Quisque nec turpis. Aliquam arcu nulla, dictum et, lacinia a, mollis in, ante. Sed eu felis in elit tempor venenatis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut ultricies porttitor purus. Proin non tellus at ligula fringilla tristique. Fusce vehicula quam. Curabitur vel tortor vitae pede imperdiet ultrices. Sed tortor.
+        </p>
+
+
+
+
+     
+<!----------After  Menu  Section ----------->
+      <div  class="container_head" style="width:98%;position:relative;">
+		      <div  class="left_header">
+		            <img class="logo" src="images/logo.png" alt=""/>
+		      </div>
+
+		      <div  class="right_header">
+                 <div  class="right_header_container">
+                      <ul class="languages">
+                        <li>Ru</li>
+                        <li>De</li>
+                        <li>Eng</li>
+                      </ul></br>
+		              <a href="#"><img class="slide2" src="images/slide1.png" alt='' /></a>
+		              <a href="#"><img class="slide2" src="images/slide2.png" alt='' /></a>
+                 </div><!--class="right_header_container">-->
+		      </div><!--class="right_header">-->
+      </div> <!--class="container_head">-->
+
+<!-------END After  Menu  Section ---------->
+
+
+       <!--Dots  on the  face-->
+         <!--<img class="dots" src="images/dot.png" alt=''/>-->
+         <img class="dotsgallo2 dot1" src="images/dot_gallo.png" alt=''  title='info'/><!--different  behavour-->
+         <img class="dotsgallo2 dot2" src="images/dot_gallo.png" alt=''  title='info'/>
+         <img class="dotsgallo2 dot3" src="images/dot_gallo.png" alt=''  title='info'/>
+
+
+
+        
+
+
 	</header><!-- .header-->
+<!---------------------------------------------------END  HEADER-------------------------------------------------->
+
+
+  </hr  class="blue-line">
 
 
 
 
-<!-------------------Main-------------------------->
+
+
+
+
+
+
+<!---------------------------------------------------Main---------------------------------------------------------------->
 	<main class="content">
-		<strong>Content:</strong> Sed placerat accumsan ligula. Aliquam felis magna, congue quis, tempus eu, aliquam vitae, ante. Cras neque justo, ultrices at, rhoncus a, facilisis eget, nisl. Quisque vitae pede. Nam et augue. Sed a elit. Ut vel massa. Suspendisse nibh pede, ultrices vitae, ultrices nec, mollis non, nibh. In sit amet pede quis leo vulputate hendrerit. Cras laoreet leo et justo auctor condimentum. Integer id enim. Suspendisse egestas, dui ac egestas mollis, libero orci hendrerit lacus, et malesuada lorem neque ac libero. Morbi tempor pulvinar pede. Donec vel elit.
-	</main><!-- .content -->
+		<!--<strong>Content:</strong> Sed placerat accumsan ligula. Aliquam felis magna, congue quis, tempus eu, aliquam vitae, ante. Cras neque justo, ultrices at, rhoncus a, facilisis eget, nisl. Quisque vitae pede. Nam et augue. Sed a elit. Ut vel massa. Suspendisse nibh pede, ultrices vitae, ultrices nec, mollis non, nibh. In sit amet pede quis leo vulputate hendrerit. Cras laoreet leo et justo auctor condimentum. Integer id enim. Suspendisse egestas, dui ac egestas mollis, libero orci hendrerit lacus, et malesuada lorem neque ac libero. Morbi tempor pulvinar pede. Donec vel elit.</br>-->
 
+              
+
+<!----------------------------------------------------------Sprite----------------------------------------------->
+     <!--</br>-->
+     <div class="sprite_container"> 
+       
+		   <div class=""> 
+					<img class="sprite spr1" src="images/img_trans.gif">
+				    <p> Text</p>
+		   </div>
+
+		   <div class=""> 
+					 <img class="sprite spr2" src="images/img_trans.gif">
+					 <p> Text2</p>
+		   </div>
+
+		   <div class=""> 
+					 <img class="sprite spr3" src="images/img_trans.gif">
+					 <p> Text3</p>
+		   </div>
+
+		   <div class=""> 
+					 <img class="sprite spr3" src="images/img_trans.gif">
+					 <p> Text3</p>
+		   </div>
+        
+     </div> <!--  end  of  class="sprite  container"> -->
+<!--------------------------------------------------------END Sprite----------------------------------------------->
+
+   
+
+<!-------------------------Philosophy------------------------------------>
+  <div  class="Philosophy">
+       <div class="phil_left">h
+       </div><!--class="phil_left-->
+
+       <div class="phil_right">
+             <p>Philosophy</p>
+       </div><!--class="phil_right"-->
+     
+  </div><!--class="Philosophy-->
+<!---------------------END Philosophy------------------------------------>
+
+
+
+
+
+
+<!-------------------------------------------------PHOTO  SLIDER 2------------------------------------------------------------------------->
+   <div class="slides-wrapper">    	
+           <div class="slideshow-container">
+
+			<div class="mySlides fade trigger">
+			  <div class="numbertext">1 / 3</div>
+			  <img src="images/gall3.png" style="width:100%" alt="" class="click">
+			  <div class="text">Caption Text</div>
+              <span class="zoom_icon"><img  src="images/zoom.png" alt="" </span><!-- zoom icon-->
+			</div>
+
+			<div class="mySlides fade trigger">
+			  <div class="numbertext">2 / 3</div>
+			  <img src="images/gall2.png" style="width:100%" alt=""  class="click">
+			  <div class="text">Caption Two</div>
+              <span class="zoom_icon"><img  src="images/zoom.png" alt="" </span><!-- zoom icon-->
+			</div>
+
+			<div class="mySlides fade trigger">
+			  <div class="numbertext">3 / 3</div>
+			  <img src="images/gall1.png" style="width:100%" alt=""  class="click">
+			  <div class="text">Caption Three</div>
+              <span class="zoom_icon"><img  src="images/zoom.png" alt="" </span><!-- zoom icon-->
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			</div>
+			<br>
+
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			  <span class="dot" onclick="currentSlide(3)"></span> 
+			</div>
+     </div> <!-- <div class="slides-wrapper">  --> 
+
+
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+	   <span class="close">&times;</span>
+	   <img class="modal-content" id="img01">
+	   <div id="caption"></div>
+
+       <!--  Nav(next, prev)-->
+	   <a class="prev" onclick="plusSlidesModal(-1)">&#10094;</a><!--  rename  and  remake  function!!!!!!!!!!!!!!!111--->
+	   <a class="next" onclick="plusSlidesModal(1)">&#10095;</a>
+
+	</div>
+<!-- END The Modal -->
+<!-------------------------------------------------END PHOTO  SLIDER 2------------------------------------------------------------------------->
+
+
+
+
+
+	</main><!-- .content -->
 </div><!-- .wrapper -->
 
 
@@ -35,7 +265,7 @@
 
 
 
-<!--------------Footer  start-------------->
+<!--------------------------------------------------------------Footer  start--------------------------------------------------------------------->
 <footer class="footer">
  <nav>
    <a href="pages/feedback.html">feedback</a> 

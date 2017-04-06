@@ -13,6 +13,7 @@ $Object->getValues();
 
 if ($_POST['validate_flag']=='vaidate_flag_OK')
 {
+   //connect  to  db 
    $database=new SavetoDB();
    $database->connectDB();
    $database->save_to_DB();
