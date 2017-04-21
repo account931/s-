@@ -1,0 +1,356 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+
+html {
+	height: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	font: 12px/18px Arial, sans-serif;
+	height: 100%;
+}
+.wrapper {
+	width: 100%;
+	//min-width: 1000px;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+
+
+
+/*----------------------------------------------------Header------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+/*------------------------------------------Menu------------------------------------------*/
+
+/*---------End Menu---------------------------------------------*/
+
+
+
+
+
+
+/*----Menu  Mobile responsive addition--*/
+/*NOT  VALID ANYTHING SO FAR ??????????????????????????*/
+
+/* the  only  different  line -dubclicated  from  core  css*/  
+.topnav a.icon {  /* Icon  for  mobile*/
+     position: absolute;left: 1%;top: 0;font-size:2em;background:#0798c7;padding:4%;color:white;}
+
+li.dropdown {display: block;width:80%;}
+
+
+
+
+
+
+
+
+
+  .topnav a {display: none;}
+  .topnav a.icon {
+    float: left;
+    display: block;
+    }
+/*added*/
+.icon{  position: absolute;border:2px  solid  red; /*added*/
+    left: 0;
+    top: 0;}
+
+
+  .topnav.responsive {position: relative;}
+ /* .topnav.*/responsive .icon {
+    position: absolute; /*when  mobile  menu  is  clicked  and  opened*/
+    left: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left; background:red;margin-top:6px;
+  }
+
+
+
+/*----END Menu  responsive--*/
+
+
+
+
+
+
+
+
+
+
+
+/*---------After Menu  section----------*/
+
+
+
+
+/*-- LEFT HEADER PART--- */
+
+/* -- END LEFT HEADER PART-- */
+
+
+
+/*----------END After Menu  section-----------*/
+
+
+
+
+/*--------------------------------------------------------End  Header---------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------------------------------------Middle------------------------------------------------------------------*/
+
+/*---START SPRITE---*/
+.sprite{max-width:90%;}
+
+.spr1{
+    /*width: auto;
+    height: auto;*/
+    background: url(../images/round_img.png) 33% 0%;  /*-241px 0; */
+    background-repeat: no-repeat;}
+
+.spr2{
+    background: url(../images/round_img.png) 65% 0; /*-491px 0; */
+    background-repeat: no-repeat;}
+
+.spr3{
+    background: url(../images/round_img.png) 97% 0;  /*-191px 0; */
+    background-repeat: no-repeat;}
+
+.sprite_container div{display: inline-block;  width: 17%;margin-bottom:10px;margin-top:15px}
+.sprite_container {margin-bottom:2%;background:#e3e3e4; width:100%;	margin: 0px auto;}
+.sprite_container p {margin:0  auto;}
+
+.sprite_container div:first-child {margin-left:13%;}
+
+.sprite:hover{ box-shadow: 0px 10px  grey;border-radius:100px;}
+.z:hover{ box-shadow: 0px 10px  grey;border-radius:100px;}
+
+/*----END  SPRITE---*/
+
+
+
+
+
+
+/*---Start  Philosophy--*/
+.Philosophy{height:100%;width:100%;  background:white;margin:2% 0;}
+.phil_left {border:2px  solid  red;width:20%; display: inline-block;margin-left:16%;vertical-align:top;height:100%;}
+.phil_left img{margin-left:16%;width:70%;}
+
+.phil_right{border:2px  solid  green;width:50%; display: inline-block;vertical-align:top;}
+.phil_right p{
+    text-indent: 1.5em; /* Отступ первой строки */
+    text-align: justify;
+}
+/*---End   Philosophy--*/
+
+
+.content {
+	padding: 0 0 100px;
+    width:100%;//80%
+    margin:0 auto;
+}
+
+/*.content h3{
+margin-top:33px;
+padding: .7em 45%;
+//margin:0 auto;
+}
+*/
+
+.form_ent {
+  margin:0 auto;
+padding-top:2%;
+}
+
+
+/*--Photo  slider--*/
+.slides-wrapper{background:  #99ddff; width:100%;padding-top:2%;padding-bottom:2%;background-image:url(../images/foot-bg.png);background-size: 100% 100%; }
+/*--End Photo  slider--*/
+
+
+
+/*--- Form----*/
+input[type=text],textarea, select {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.formm input[type=button] {
+    width: 40%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.formm  {
+    border-radius: 5px;
+    background-color:#f2f2f2; // #f2f2f2
+    padding: 20px;
+   // margin-top:44px;
+    //margin-bottom:44px;
+    width:80%;
+    margin:44px auto;
+}
+.error_req {
+color: #FF0000;
+}
+
+/*--- END Form----*/
+
+
+
+
+
+/*-------------News  BLOCK-----*/
+.news-wrapper{width:100%;margin:0 auto;margin:1% 0;border:2px  solid  green;}
+.news-container{width:90%;margin:0 auto;border:2px  solid  red;}
+.news-container p:first-child{font-size:2em; margin:0 auto;}
+.sub-news{ display: inline-block;margin-left:7%;width:25%;}/* Blocks  were  crashing  'cause div   width  was  not  set + added  img  width  not  to  overflow*/
+.sub-news img{width:70%;} 
+/*-------- END News  BLOCK-----*/
+
+
+
+
+
+/*----------------------------------------------------------END Middle-----------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------Footer-----------------------------------------------------------------------------*/
+.footer {
+	margin: -100px auto 0;width:100%;
+	/*min-width: 1000px;  was  tempo disabled*/
+	height: 20%;
+	background:#0798c7;	 /* #007dff;   #99ebff;   #BFF08E;*/
+	position: relative;
+    padding:20px;
+    
+}
+
+.footer-left{display:inline-block;width:44%;border:2px  solid  red;vertical-align:top;margin-left:1%;}
+.footer-right{display:inline-block;width:44%;border:2px  solid  red;vertical-align:top;margin-left:2%;}
+
+.footer-left p{margin-left:1%;}
+.footer-left input[type=button]  { 
+					margin-left:3%;padding:1.5%;cursor:pointer;background:#0798c7;	color:white;border-radius:5px;border:2px  solid  white;}
+.feed-button{
+                    margin-top:-15px;
+					background-image: url('images/loc.png');
+					background-repeat: no-repeat;
+					background-position: left;
+					
+                                  }
+
+.footer .icon{margin-right:2%;}
+
+.footerleft-subcenter,.footerleft-subright,.footerright-sublcenter,.footerright-subright{border:1px  solid  red;display:inline-block;width:35%; }
+.footerleft-subleft,.footerright-subleft{border:1px  solid  red;display:inline-block;width:10%; }
+.footer-left img{margin-left:1%;}
+.foot-img{margin-top:3%;vertical-align: bottom;}
+
+/*---------------------------------------------------------END Footer--------------------------------------------------------------------------*/
+
+
+
+
+
+
+/*----------------------------------------------------------Feedback Page---------------------------------------------------------------------*/
+.sp{
+color:red;
+margin-left:20px;
+
+}
+
+
+
+
+
+
+
+/* For desktop: */
+@media only screen and (min-width: 768px){   
+}
+
+
+
+/* For tablets: */
+@media only screen and (min-width: 600px) {
+}
+    
+
+
+/* For  mobile */  ----------------------------------------------- 
+/* smartphones, Android phones, landscape iPhone */ 
+@media screen and (max-width: 600px) {   
+
+}
+
+/*  END  mobile */---------------------------------------------
