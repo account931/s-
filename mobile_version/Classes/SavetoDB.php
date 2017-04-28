@@ -3,54 +3,6 @@
 {
 
 
-
-//singletone
-// **************************************************************************************
-// **************************************************************************************
-//                                                                                     **  
-    protected static $_instance;  // class instance
-  
-    public static function getInstance()// get  a class instance
-         { 
-            if (self::$_instance === null) // if  class instance  does  not  exist
-               { 
-                self::$_instance = new self;  // create  new  class instance
-               } 
-            return self::$_instance; // returen  class instance
-         }
-
-
-
-//constructor
-private  function __construct(){ 
-  $this->connectDB(); //call  this  Class   function which  creates connection  to  DB 
-}
-
-
-
-
-//prohibit  object cloning by  "private "
-private function __clone() { }
- 
-//prohibit  object cloning by  "private "       
-private function __wakeup() {}
-// **                                                                                  **
-// **************************************************************************************
-// **************************************************************************************
-//
-//end  singletone
-
-
-
-
-
-
-
-
-
-
-
-
 // **************************************************************************************
 // **************************************************************************************
 //                                                                                     **  

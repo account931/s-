@@ -1,3 +1,4 @@
+
 * {
 	margin: 0;
 	padding: 0;
@@ -25,6 +26,10 @@ body {
 	height: auto !important;
 	height: 100%;
 }
+
+
+
+
 
 
 
@@ -534,9 +539,9 @@ margin-left:20px;
 
 }
 
-#ajaxResponse{width:80%;margin:0 auto;}
 
-/*----------------------------------------------------------END Feedback Page---------------------------------------------------------------------*/
+
+
 
 
 

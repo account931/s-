@@ -1,28 +1,22 @@
 <?php
-//handler  just  call  the  necessary  Classes
 
 include '../Classes/Validate.php';
 include '../Classes/SavetoDB.php';
 include '../Classes/Mail.php';
 
 
-//Server-side  validate
+
 $Object=new Validate();
 $Object->getValues();
 
 
 
-if ($_POST['validate_flag']=='vaidate_flag_OK') //if  we  get  flag  from relevant Class  method
+if ($_POST['validate_flag']=='vaidate_flag_OK')
 {
-   //connect  to  db -->reassigned  to  singleton
-   /*$database=new SavetoDB();
+   //connect  to  db 
+   $database=new SavetoDB();
    $database->connectDB();
-   $database->save_to_DB();*/
-
-   //singletone DB connection+saving
-	   $singeltone=SavetoDB::getInstance();
-	   $singeltone->save_to_DB();
-   //end  singletone
+   $database->save_to_DB();
 
    $Email=new Mail();
    $Email->sendMail();

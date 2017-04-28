@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+	<title>Mobile</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="script/slider.js"></script>
+    <script src="script/script.js"></script>
+
+	<link href="style/style.css" rel="stylesheet">
+    <link href="style/slider.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 480px)" href="style/mobile.css" /><!-- Css   for  mobile  device -->
+
+
+    <!---LightBox  JS  CSS---->
+       <!--<script type="text/javascript" src="script/jquery.lightbox-0.5.min.js"></script>-->
+    <!--<link rel="stylesheet" type="text/css" media="all" href="style/jquery.lightbox-0.5.css">-->
+
+
+
+</head>
+
+<!--- YOU are in MOBILE   NOW!!!!!!!!!!!!!!-->
+<!--Redirecting  to  DESKTOP   VERSION-->
+<script type="text/javascript">
+  //  Redirecting  to  DESKTOP   VERSION
+     
+  if (screen.width >480) { // alert('back  to  DESTOP');
+    //window.location = "/s++++++";
+  }
+
+//aditional  option 
+if(jQuery.browser.mobile) { alert("Mob JQ");/*window.location = 'mobile_url';*/}
+  </script>
+<!--END Redirecting  to  DESKTOP   VERSION-->
+
+
+<body>
+
+
+
+
+
+
+
+<div class="wrapper">
+
+<!------------------------------------------------------------HEADER---------------------------------------------------------------------->
+         <div  class="header">
+
+		           <div  class="header-left">
+                       <!-- START menu-->
+
+											  <div class="dropdown">
+												<button onclick="myFunction()" class="dropbtn">&#9776;</button>
+												  <div id="myDropdown" class="dropdown-content">
+													<a href="#home">Home</a>
+													<a href="#about">About</a>
+													<a href="#contact">Contact</a>
+                                                    <a href="#contact">News</a>
+												  </div>
+												</div>
+
+												<script>
+												/* When the user clicks on the button, 
+												toggle between hiding and showing the dropdown content */
+												function myFunction() {
+													document.getElementById("myDropdown").classList.toggle("show");
+												}
+
+												// Close the dropdown if the user clicks outside of it
+												window.onclick = function(event) {
+												  if (!event.target.matches('.dropbtn')) {
+
+													var dropdowns = document.getElementsByClassName("dropdown-content");
+													var i;
+													for (i = 0; i < dropdowns.length; i++) {
+													  var openDropdown = dropdowns[i];
+													  if (openDropdown.classList.contains('show')) {
+														openDropdown.classList.remove('show');
+													  }
+													}
+												  }
+												}
+												</script>
+
+								    
+
+                       <!-- END  menu-->
+		           </div><!--  end class="header-left"-->
+
+
+
+		            <div  class="header-right">
+		                  <div>Praxisklinik in baden-baden</div>
+		                  <div>Praxis in ransbach-ransbach</div>
+
+		           </div> <!--end class="header-right"-->
+            
+         </div><!--  end class="header"-->
+
+<!------------------------------------------------------------END HEADER---------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+<!------------------------------------------------------------FACE--------------------------------------------------------------------->
+                    <div  class="face">
+                    </div> <!--end .face-->
+
+<!--------------------------------------------------------END FACE--------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+<!------------------------------------------------------------Sprite--------------------------------------------------------------------->
+                    <div  class="sprite-container">
+														   
+									   <div class="sprite-top"> 
+                                              <div>
+												<img class="sprite spr1" src="images/img_trans.gif">
+												<p> Text</p>
+                                              </div>
+									   
+
+									           <div>
+												 <img class="sprite spr2" src="images/img_trans.gif">
+												 <p> Text2</p>
+                                               </div>
+									   </div> <!-- END class="sprite-top-->
+                                        
+                                      
+
+									   <div class="sprite-bottom"> 
+                                              <div>  
+												 <img class="sprite spr3" src="images/img_trans.gif">
+												 <p> Text3</p>
+                                              </div> 
+									  
+
+									           <div> 
+												 <img class="sprite spr3" src="images/img_trans.gif">
+												 <p> Text3</p>
+                                               </div> 
+									   </div><!-- END class="sprite-bottom-->
+        
+
+                         
+                    </div> <!--end .sprite-->
+
+<!--------------------------------------------------------END Sprite--------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+<!--------------------------------------------------------------Philisophy--------------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div><!--  End class="wrapper"--> 
+</body>
+</html>

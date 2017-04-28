@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8" />
 	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
-	<title></title>
+	<title>Mobile</title>
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
 
@@ -18,21 +18,26 @@
 
 
     <!---LightBox  JS  CSS---->
-    <script type="text/javascript" src="script/jquery.lightbox-0.5.min.js"></script>
+       <!--<script type="text/javascript" src="script/jquery.lightbox-0.5.min.js"></script>-->
     <!--<link rel="stylesheet" type="text/css" media="all" href="style/jquery.lightbox-0.5.css">-->
 
 
 
 </head>
 
-<!--  DETECTING   THE  MOBILE  and  redirect  it  -->
+<!--- YOU are in MOBILE   NOW!!!!!!!!!!!!!!-->
+<!--Redirecting  to  DESKTOP   VERSION-->
 <script type="text/javascript">
-  //  Redirecting  to  mobile  version
-  if (screen.width <= 480) {alert("mobile  detected");
-    window.location = "/s++++++/mobile_version/mobile.html";
+  //  Redirecting  to  DESKTOP   VERSION
+     
+  if (screen.width >480) {  alert('back  to  DESTOP');
+    window.location = "/s++++++";
   }
-  </script>
 
+//aditional  option 
+if(jQuery.browser.mobile) { alert("Mob JQ");/*window.location = 'mobile_url';*/}
+  </script>
+<!--END Redirecting  to  DESKTOP   VERSION-->
 
 
 <body>
